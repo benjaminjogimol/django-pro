@@ -3,9 +3,9 @@ from django.http import HttpResponse
 
 # Create your views here.
 def indexpage(request):
-    return HttpResponse("Welcome to my site")
+    return render(request,'index.html')
 def contactpage(request):
-    return HttpResponse("contact page")
+    return render(request,'contact.html')
 def homepage(request):
     return HttpResponse("Welcome to Home page")
 def applyonline(request):
